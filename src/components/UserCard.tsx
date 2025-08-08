@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { UserCardDetail } from "./UserCardDetail";
 import { BsChevronUp, BsChevronDown } from "react-icons/bs";
-export const UserCard = ({ name, imgUrl, address, email }) => {
+export const UserCard = ({ name, imgUrl, address, email }: any) => {
   const [isDetailShown, setIsDetailShown] = useState(false);
 
   const userCardOnClick = () => {
@@ -15,7 +15,7 @@ export const UserCard = ({ name, imgUrl, address, email }) => {
         <span className="text-center display-6 me-auto">{name}</span>
         {isDetailShown ? <BsChevronUp /> : <BsChevronDown />}
       </div>
-      {/* display UserCardDetail accordingly */}
+      {isDetailShown && <UserCardDetail email = {email} address = {address} />}
     </div>
   );
 };
