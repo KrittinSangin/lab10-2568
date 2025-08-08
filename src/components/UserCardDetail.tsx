@@ -1,6 +1,6 @@
 import { BsMailbox2, BsFillPinMapFill } from "react-icons/bs";
-
-export const UserCardDetail = ({ email, address }) => {
+import type { CardUserProps } from "../libs/CardUserType";
+export const UserCardDetail = ({email,address}:CardUserProps) => {
   return (
     <div className="text-center">
       <p>
