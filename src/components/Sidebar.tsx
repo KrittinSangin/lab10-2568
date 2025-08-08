@@ -16,7 +16,7 @@ export default function Sidebar({ userName, type }: SidebarProps) {
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to={"/"}>
                 <BsPlusCircleFill />
-                <span className="d-md-inline px-2">RamdomUser</span>
+                <span className="d-md-inline px-2">RandomUser</span>
               </Link>
             </li>
           </ul>
